@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="bg-neutral-800 text-neutral-400">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./scripts/index.js"></script>
+    <link href="./output.css" rel="stylesheet" />
+    <title>Rotas e Pacotes MELI</title>
+  </head>
+  <body>
+    <section class="mt-10 flex flex-col md:flex-row gap-40 justify-center items-center">
+
+        <div>
+            <h1 class="text-3xl font-bold">Abrir Rotas</h1>
+            <p>Insira um número de rota por linha:</p>
+            <textarea
+            class="bg-neutral-400 text-neutral-950"
+            id="rotas"
+            rows="5"
+            cols="40"
+            placeholder="Exemplo: 12345&#10;67890&#10;54321"
+            ></textarea>
+            <br /><br />
+            <button
+            class="bg-black font-ligther text-orange-600 text-xl sm:text-3xl p-12 py-2 px-4 rounded-3xl hover:bg-orange-700 hover:text-orange-300 hover:shadow-2xl"
+            onclick="abrirRotas()"
+            >
+            Abrir Rotas
+        </button>
+    </div>
+    <div>
+        <h1 class="text-3xl font-bold">Abrir Detalhes de Pacotes</h1>
+        <p>Insira um número de pacote por linha:</p>
+        <textarea
+        class="bg-neutral-400 text-neutral-950"
+        id="pacotes"
+        rows="5"
+        cols="40"
+        placeholder="Exemplo: 12345&#10;67890&#10;54321"
+        ></textarea>
+        <br /><br />
+        <button
+        class="bg-black font-ligther text-orange-600 text-xl sm:text-3xl p-12 py-2 px-4 rounded-3xl hover:bg-orange-700 hover:text-orange-300 hover:shadow-2xl"
+        onclick="abrirPacotes()"
+        >
+        Abrir Pacotes
+    </button>
+</div>
+</section>
+  </body>
+</html>
