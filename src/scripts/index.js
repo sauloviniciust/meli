@@ -39,5 +39,29 @@ function abrirPacotes() {
 
        
     });
-    document.getElementById("rotas").value = '';
+    document.getElementById("pacotes").value = '';
 }
+
+function abrirMotoristas() {
+    // Base da URL
+    const urlBase = "https://envios.adminml.com/logistics/provider-management/drivers/edit/";
+
+    // Captura o valor da caixa de entrada
+    const motoristasInput = document.getElementById("motoristas").value;
+
+    // Divide os números de motoristas por linha
+    const motoristas = motoristasInput.split("\n");
+
+    // Abrir cada motorista imediatamente sem delay
+    motoristas.forEach(function(motorista) {
+        const urlCompleta = urlBase + motorista.trim();
+        if (motorista.trim()) {
+            // Abre cada URL em uma nova aba
+            window.open(urlCompleta, '_blank');
+        }
+
+       
+    });
+    document.getElementById("motoristas").value = '';
+}
+

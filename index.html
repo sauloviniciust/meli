@@ -8,7 +8,7 @@
     <title>Rotas e Pacotes MELI</title>
   </head>
   <body>
-    <section class="mt-10 flex flex-col md:flex-row gap-40 justify-center items-center">
+    <section class="mt-10 flex flex-col md:flex-row  gap-40 justify-center items-center">
 
         <div>
             <h1 class="text-3xl font-bold">Abrir Rotas</h1>
@@ -45,6 +45,24 @@
         >
         Abrir Pacotes
     </button>
+</div>
+<div>
+  <h1 class="text-3xl font-bold">Abrir perfil de motoristas</h1>
+  <p>Insira um id de motorista por linha:</p>
+  <textarea
+  class="bg-neutral-400 text-neutral-950"
+  id="motoristas"
+  rows="5"
+  cols="40"
+  placeholder="Exemplo: 12345&#10;67890&#10;54321"
+  ></textarea>
+  <br /><br />
+  <button
+  class="bg-black font-ligther text-orange-600 text-xl sm:text-3xl p-12 py-2 px-4 rounded-3xl hover:bg-orange-700 hover:text-orange-300 hover:shadow-2xl"
+  onclick="abrirMotoristas()"
+  >
+  Abrir motoristas
+</button>
 </div>
 </section>
   </body>
