@@ -16,6 +16,7 @@ function abrirRotas() {
             window.open(urlCompleta, '_blank');
         }
     });
+    document.getElementById("rotas").value = '';
 }
 
 function abrirPacotes() {
@@ -35,5 +36,8 @@ function abrirPacotes() {
             // Abre cada URL em uma nova aba
             window.open(urlCompleta, '_blank');
         }
+
+       
     });
+    document.getElementById("rotas").value = '';
 }
