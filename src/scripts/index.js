@@ -65,3 +65,25 @@ function abrirMotoristas() {
     document.getElementById("motoristas").value = '';
 }
 
+function abrirPlacas() {
+    // Base da URL
+    const urlBase = "https://placafipe.com/placa/";
+
+    // Captura o valor da caixa de entrada
+    const placasInput = document.getElementById("placas").value;
+
+    // Divide os números de placas por linha
+    const placas = placasInput.split("\n");
+
+    // Abrir cada placa imediatamente sem delay
+    placas.forEach(function(placa) {
+        const urlCompleta = urlBase + placa.trim();
+        if (placa.trim()) {
+            // Abre cada URL em uma nova aba
+            window.open(urlCompleta, '_blank');
+        }
+
+       
+    });
+    document.getElementById("placas").value = '';
+}
