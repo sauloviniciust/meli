@@ -67,7 +67,7 @@ function abrirMotoristas() {
 
 function abrirPlacas() {
     // Base da URL
-    const urlBase = "https://placafipe.com/placa/";
+    const urlBase = "https://www.tabelafipebrasil.com/placa?placa=";
 
     // Captura o valor da caixa de entrada
     const placasInput = document.getElementById("placas").value;
